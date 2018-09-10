@@ -12,6 +12,15 @@
         padding: 0 2%;
     }
 
+    .logo{
+        height: 25px;
+        width:auto;
+        float: left; 
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+    
+
     
     
 }
@@ -28,26 +37,22 @@
     margin-left: 15%;
 }
     .steps-box{margin-top: 10px;}
-    .work-steps{margin-bottom: 40px;}
-    .work-steps:last-of-type{margin-bottom: 40px;}
-    .steps-box:last-child{padding-left: 3%;margin-top:10px;}
-  .app-screen{width: 50%;}
-    .icon-small{
-        width:17px;
-        margin-right: 5px;
-    }
-    .city-features{
-        font-size: 90%;
-    }
-    .plan-box{
-        width: 100%;
-        margin-left: 0;
-    }
-    .plan-price{
-        font-size: 250%;
-    }
-    .contact-form{
-        width:80%;
+  
+  .app-screen{width: 70%;}
+   
+
+    .span{
+        position: relative;
+        left:310px;
+        top:-50px;
+        background-color:#FDBC2D;
+        color: #000000;
+        font-size: 120%;
+        font-weight: 800;
+        width:75px;
+        height:75px;
+        text-align: center;
+        padding:15px;
     }
 }
 
@@ -60,12 +65,12 @@
     body{font-size: 16px;}
     section{padding: 30px 0;}
     .row, .hero-text-box{ padding: 0 4%;}
-    .col{width: 100%; margin: 0 0 1% 0}
+    /* .col{width: 100%; margin: 0 0 1% 0} */
     .main-nav{display: none;}
     .mobile-nav-icon{display: inline-block;}
     
     .mobile-nav-icon i{
-         color: #555;
+         color: #ffffff;
     }
     .main-nav{
         float: left;
@@ -93,27 +98,30 @@
     
     
       .long-copy{width:100%;margin-left: 0;}
-    h1{ font-size: 180%;}
-    h2{ font-size: 150%;}
+     h1{ font-size: 200%;}
+  
+     .hero-text-box p{
+         margin-top: 3%;
+     }
+  
    
-    .work-steps{margin-bottom: 20px;}
-    .work-steps:last-of-type{margin-bottom: 20px;}
-    .work-steps div{
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    padding: 4px;
-    float:left;
-    margin-right: 15px;
-}
-    .steps-box:first-child{text-align: center;}
-    .app-screen{width: 40%;}
-    .social-nav{list-style: none; float: left;}
-    cite{
+
+.span{
+    position: relative;
+    left:190px;
+    top:-10px;
+    background-color:#FDBC2D;
+    color: #000000;
     font-size: 90%;
-    margin-top: 5%;
-    display: block;
+    font-weight: 600;
+    width:50px;
+    height:50px;
+    text-align: center;
+    padding:15px;
 }
+
+
+
   
 }
 
