@@ -8,6 +8,7 @@
 /*--------------------------*/
 
 *{
+
     
     margin: 0;
     padding: 0;
@@ -185,7 +186,7 @@ input[type=button]{
 
 .btn-ghost:link, 
 .btn-ghost:visited{
-    border: 3px solid #FDBC2D;
+    border: 1px solid #FDBC2D;
     color: #ffffff;
     margin-right: 16px;
     
@@ -312,14 +313,26 @@ header{
 .section-steps{
     background-color: #ffffff;
 }
-.section-steps .btn-ghost
+.section-steps .btn-ghost,
+.section-intro .btn-ghost,
+.section-contact .btn-ghost
 {
     color: black;
     margin-top: 10px;
 }
 
+.section-intro h4,
+.section-contact h4
+{
+    text-align: center;
+}
 
+.section-intro .first-p,
 
+.section-contact .first-p {
+    text-align: center;
+}
+   
 
 
 .section-steps h3{
@@ -335,6 +348,7 @@ header{
 .app-screen{
      width: 60%;
    margin-left:  30%;
+   margin-top: -80px;
 }
 .screen{
     width: 60%;
@@ -378,6 +392,112 @@ header{
     text-align: center;
 }
 
+.contact-form{
+
+  width: 76%;
+    box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+}
+* { box-sizing:border-box; }
+form {
+	width: 380px;
+	/* margin: 4em auto; */
+	padding: 1em 0.5em 0.5em 0.5em;
+	background: #ffffff;
+	border: 0px solid #ebebeb;
+	
+}
+
+.group { 
+	position: relative; 
+	margin-bottom: 45px; 
+}
+
+input {
+	font-size: 18px;
+	padding: 5px 5px 5px 5px;
+	-webkit-appearance: none;
+	display: block;
+	background: #ffffff;
+	color: #636363;
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #757575;
+}
+
+input:focus { outline: none; }
+
+
+/* Label */
+
+label {
+	color: #999; 
+	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 5px;
+	top: 10px;
+	transition: all 0.2s ease;
+}
+
+
+/* active */
+
+input:focus ~ label, input.used ~ label {
+	top: -20px;
+  transform: scale(.75); left: -2px;
+	/* font-size: 14px; */
+	color: #4a89dc;
+}
+
+
+/* Underline */
+
+.bar {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.bar:before, .bar:after {
+	content: '';
+	height: 2px; 
+	width: 0;
+	bottom: 1px; 
+	position: absolute;
+	background: #4a89dc; 
+	transition: all 0.2s ease;
+}
+
+.bar:before { left: 50%; }
+
+.bar:after { right: 50%; }
+
+
+/* active */
+
+input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
+
+
+/* Highlight */
+
+.highlight {
+	position: absolute;
+	height: 60%; 
+	width: 100px; 
+	top: 25%; 
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+
+/* active */
+
+input:focus ~ .highlight {
+	animation: inputHighlighter 0.3s ease;
+}
 
 
 
