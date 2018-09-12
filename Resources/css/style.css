@@ -49,10 +49,10 @@ section{
 
 /*----- Headings-------*/
 
-h1,h2,h3{
+h2,h3{
    
     font-weight: 300;
-    text-transform: uppercase;  
+    
 }
 
 h1{
@@ -60,7 +60,7 @@ h1{
     margin-bottom: -60px;
     word-spacing: 4px;
     color:#FDBC2D;
-    font-size: 300%;
+    font-size: 338%;
     font-weight: 900;
      letter-spacing: 1px;
 
@@ -71,7 +71,7 @@ h1{
 .span{
     position: relative;
     left:350px;
-    top:-60px;
+    top:-65px;
     background-color:#FDBC2D;
     color: #000000;
     font-size: 140%;
@@ -217,7 +217,7 @@ header{
     position: absolute;
     width: 1140px;
     top:30%;
-    left:12%;
+    left:17%;
     transform: translate(-5%, -5%);
 }
 
@@ -321,10 +321,18 @@ header{
     margin-top: 10px;
 }
 
+
+.section-intro p{
+     font-size: 90%;
+    line-height: 24px;
+}
 .section-intro h4,
 .section-contact h4
+
 {
+    font-size: 180%;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .section-intro .first-p,
@@ -332,7 +340,27 @@ header{
 .section-contact .first-p {
     text-align: center;
 }
-   
+.section-contact h5{
+    font-size: 180%;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.section-contact p{
+    font-size: 70%;
+    margin-bottom: 20px;
+    
+}
+.section-contact hr{
+    width: 10%;
+    border-top: 3px solid #e67e22;
+  
+}
+
+.company 
+{
+    text-align: right;
+}
 
 
 .section-steps h3{
@@ -343,6 +371,7 @@ header{
 .section-steps p{
     font-weight: 300;
     font-size: 90%;
+  
     margin-bottom: 30px;
 }
 .app-screen{
@@ -362,12 +391,17 @@ header{
     margin-bottom: 10px;
      font-size: 90%;
 }
-
+.section-intro h4,
+.section-intro img,
+.section-intro h5
+{
+    margin-bottom: 20px;
+}
 
 .section-step h3{
     font-weight: 800;
     font-size: 120%;
-    text-align: center;
+    text-align: right;
     margin-top: 50px;
 }
 
@@ -385,7 +419,7 @@ header{
 .section-step p{
     font-weight: 300;
     font-size: 90%;
-    text-align: center;
+    text-align: right;
     margin-top: 30px;
 }
 .comp-btn{
@@ -394,7 +428,7 @@ header{
 
 .contact-form{
 
-  width: 76%;
+  width:37%;
     box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
 }
 * { box-sizing:border-box; }
@@ -405,6 +439,11 @@ form {
 	background: #ffffff;
 	border: 0px solid #ebebeb;
 	
+}
+
+.btn-center{
+    text-align: center;
+    margin-top: 20px;
 }
 
 .group { 
@@ -447,35 +486,12 @@ label {
 input:focus ~ label, input.used ~ label {
 	top: -20px;
   transform: scale(.75); left: -2px;
-	/* font-size: 14px; */
 	color: #4a89dc;
 }
 
 
-/* Underline */
-
-.bar {
-	position: relative;
-	display: block;
-	width: 100%;
-}
-
-.bar:before, .bar:after {
-	content: '';
-	height: 2px; 
-	width: 0;
-	bottom: 1px; 
-	position: absolute;
-	background: #4a89dc; 
-	transition: all 0.2s ease;
-}
-
-.bar:before { left: 50%; }
-
-.bar:after { right: 50%; }
 
 
-/* active */
 
 input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
 
@@ -519,9 +535,10 @@ footer{
     float: left;
 }
 
-.social-nav{
+.social-nav, 
+{
    list-style: none; 
-     float: right;
+    
 }
 .footer-nav li,
 .social-nav li {
@@ -537,6 +554,7 @@ footer{
 .footer-nav li a:visited,
 .social-nav li a:link,
 .social-nav li a:visited
+
 {
     text-decoration: none;
     border: 0;
@@ -548,41 +566,24 @@ footer{
     color: #ddd;
 }
 
+#socio-nav li,
+#socio-nav-two li{
+    display: block;
+   
+   
+}
+.footer-icon{
+   
+}
+
+/*
 footer p{
     color: #888;
     text-align: center;
     margin-top: 30px;
 }
+*/
 
-.social-nav li a:link,
-.social-nav li a:visited{
-    font-size: 160%;
-}
-.social-nav .ion-social-facebook:hover
-{
-    color: #3b5998;
-}
-
-.social-nav .ion-social-twitter:hover
-{
-    color: #00aced;
-}
-
-.social-nav .ion-social-googleplus:hover
-{
-    color: #dd4b39;
-}
-.social-nav .ion-social-instagram:hover
-{
-    color: #517fa4;
-}
-
-.ion-social-instagram,
-.ion-social-facebook,
-.ion-social-googleplus,
-.ion-social-twitter{
-    transition: color 0.2s,
-}
 
 /*--------------------------*/
 
