@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,500i,600,800,900i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,500i,600,600i,700');
 
 /*--------------------------*/
 
@@ -17,12 +16,13 @@
 html,body{
     background-color: #fff;
     color: #555555;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     text-rendering: optimizeLegibility;
     font-size: 20px;
     overflow-x: hidden;
 }
+
 .clearfix{zoom:1}
 .clearfix:after{
     content: '.';
@@ -30,6 +30,72 @@ html,body{
     display: block;
     height: 0;
     visibility: hidden;
+}
+
+
+/* Header */
+
+
+.header{
+    background-image: url("https://res.cloudinary.com/dhtqkszzc/image/upload/v1537011695/backgound-img_arlb5y.png");
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+   
+}
+.head,.section-one-main{
+     margin-left: 5%;
+}
+
+
+
+.logo{
+    height: 25px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.hero-logo{
+    height:50%;
+    width:50%;
+}
+
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top:22%;
+    padding-left:25px
+}
+
+
+
+.hero-text-box hr{
+
+    border-top: 3px solid #00BFB1;
+    width: 65%;
+    height:5px;
+    margin:50px 0;
+    
+}
+
+
+.hero-text-one{
+    width: 25%;
+     float:left;
+    
+}
+
+.hero-text-two{
+     width: 25%;
+     float:left;
+    height:auto;
+    
+}
+.hero-text-three{
+     width: 25%;
+     float:left;
+    
 }
 
 /*--------------------------*/
@@ -55,70 +121,8 @@ h2,h3{
     
 }
 
-h1{
-    margin-top: 0;
-    margin-bottom: -60px;
-    word-spacing: 4px;
-    color:#FDBC2D;
-    font-size: 338%;
-    font-weight: 900;
-     letter-spacing: 1px;
-
-}
-
-.span{
-    position: relative;
-    left:350px;
-    top:-65px;
-    background-color:#FDBC2D;
-    color: #000000;
-    font-size: 140%;
-    font-weight: 800;
-    width:100px;
-    height:100px;
-    text-align: center;
-    padding:25px;
-}
 
 
-.hero-text-box p{
-    margin-bottom: 4%;
-    color: #ffffff;
-}
-.hero-text-box h3 {
-    color: #FDBC2D;
-}
-
-h2{
-    font-size: 180%;
-    word-spacing: 2px;
-    text-align: center;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
-    
-}
-h3{
-    font-size: 110%;
-    font-weight: 500;
-    line-height: 100%;  
-    margin-bottom: 2px;
-    
-}
-
-h2:after{
-    display: block;
-    height: 2px;
-    background-color: #e67e22;
-    content: " ";
-    width:100px;
-    margin: 0 auto;
-    margin-top: 30px;
-    
-}
-
-.box{
-    padding: 1%;
-}
 
 
 
@@ -141,21 +145,23 @@ a:active{
 }
 
 /*----- Buttons-------*/
-.btn:link,
+ .btn:link,
 .btn:visited,
 input[type=button]{
     display: inline-block;
     padding: 10px 30px;
+    background-color: #ffffff;
     font-weight: 300;
     text-decoration: none;
     border-radius: 10px;
     transition: background-color 0.2s, border 0.2s, color 0.2s,;
 }
 
+
 .btn-ghost:link, 
 .btn-ghost:visited{
-    border: 1px solid #FDBC2D;
-    color: #ffffff;
+    border: 1px solid #00BFB1;
+    color: #000000;
     font-weight: 500;
     margin-right: 16px;
     
@@ -164,38 +170,19 @@ input[type=button]{
 .btn:active,
 input[type=button]:hover,
 input[type=button]:active{
-    background-color: #cf6d17;
+    background-color: #00BFB1;
+}
+
+
+.hero-text-one a,
+.hero-text-two a{
+    margin-top: 25px;
 }
 
 
 
-.btn-ghost:hover, 
-.btn-ghost:visited{
-    border: 1px solid #e67e22;
-}
 
-header{
-    background-image: linear-gradient(rgba(50, 91, 7, 0.563), rgba(51, 91, 7, 0.563)), url("../../Resources/img/background-img.png");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height:100vh;
-}
 
-.hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top:30%;
-    left:17%;
-    transform: translate(-5%, -5%);
-}
-
-.logo{
-    height: 25px;
-    width:auto;
-    float: left; 
-    margin-top: 20px;
-}
 
 
 
@@ -271,21 +258,28 @@ header{
 }
 
 
-.section-steps{
-    background-color: #ffffff;
+
+.section-intro{
+     background-image: url("https://res.cloudinary.com/dhtqkszzc/image/upload/v1537022595/Background_lnrlpo.svg");
+     background-size: cover;
+     background-position: center;
+    height: 100vh;
+   
 }
-.section-steps .btn-ghost,
+.btn-ghost,
 .section-intro .btn-ghost,
 .section-contact .btn-ghost
 {
     color: black;
     margin-top: 10px;
+    background-color: #ffffff;
 }
 
 
 
 .section-intro p{
      font-size: 90%;
+     font-weight: 400;
     line-height: 24px;
 }
 .section-intro h4,
@@ -293,14 +287,17 @@ header{
 
 {
     font-size: 180%;
-    text-align: center;
-    margin-bottom: 20px;
+    margin-left: 13%;
+    margin-bottom: 0px;
 }
 
 .section-intro .first-p,
 
 .section-contact .first-p {
-    text-align: center;
+    
+/*    text-align: center;*/
+    
+    
 }
 .section-contact h5{
     font-size: 180%;
@@ -319,25 +316,34 @@ header{
   
 }
 
+/*
 .company 
 {
     text-align: right;
 }
-
-
-.section-steps h3{
-    font-weight: 800;
-    font-size: 120%;
-    margin-bottom: 30px;
+*/
+.section-students{
+    background-color: #ffffff;
+    height: 100vh;
 }
-.section-steps p{
-    font-weight: 300;
+.section-students hr{
+    border-top: 5px solid #0D2623;
+    width: 20%;
+    margin-bottom: 1%;
+}
+
+.section-students h3{
+    font-weight: 800;
+    font-size: 150%;
+    margin-bottom: 10px;
+}
+.section-students p{
+    font-weight: 500;
     font-size: 90%;
-  
     margin-bottom: 30px;
 }
 .app-screen{
-     width: 60%;
+ width: 60%;
    margin-left:  30%;
    margin-top: -80px;
 }
@@ -353,20 +359,102 @@ header{
     margin-bottom: 10px;
      font-size: 90%;
 }
+
+.section-intro p,
 .section-intro h4,
-.section-intro img,
-.section-intro h5
+.section-intro h2
 {
-    margin-bottom: 20px;
+   
+    color: #ffffff;
+   
+}
+.section-intro h2{
+    font-weight: 600;
+     margin-bottom: 5px;
+    margin-top: 30px;
 }
 
-.section-step h3{
+
+.section-intro h1{
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.section-intro hr{
+    
+    border-top: 3px solid #ffffff;
+    width: 5%;
+    margin-left: 13%;
+    margin-bottom: 1%;
+}
+.section-graduate hr
+{
+    border-top: 5px solid #0D2623;
+    width: 20%;
+    margin-bottom: 1%;
+    margin-top: 30px;
+    
+}
+.section-graduate-2 hr{
+    border-top: 5px solid #00BFB1;
+    width: 10%;
+    margin-bottom: 1%;
+    margin-top: 30px;
+    
+}
+
+.section-graduate-2{
+     background-image: url("https://res.cloudinary.com/dhtqkszzc/image/upload/v1537037120/Background_3_oa3mvp.png");
+     background-size: cover;
+     background-position: center;
+      color: #FFFFFF;
+     height: 100vh;
+    
+}
+
+.section-graduate-2 .btn-ghost{
+    margin-top: 30px;
+}
+
+
+.section-graduate h3,
+.section-graduate-2 h3,
+ .section-university h3,
+.section-university-2 h3{
     font-weight: 800;
-    font-size: 120%;
-    text-align: right;
-    margin-top: 50px;
+    font-size: 200%;
+    margin-top: 10px;
+}
+.section-university {
+ background-image: url("https://res.cloudinary.com/dhtqkszzc/image/upload/v1537035434/Background_2_zif9rd.png");
+     background-size: cover;
+     background-position: center;
+    color: #FFFFFF;
+    height: 100vh;
+
+}
+.section-university h3,
+.section-university-2 h3{
+    margin-left: 10%;
+}
+.section-graduate{
+    background-image: url("https://res.cloudinary.com/dhtqkszzc/image/upload/v1537038084/Banner_geny_1_x5ktlh.png");
+     background-size: cover;
+     background-position: center;
+    height: 100vh;
+    
 }
 
+
+
+
+
+
+
+.graph-6{
+    float: left;
+}
+/*
 .section-step{
      background-color: #ffffff;
 }
@@ -374,19 +462,25 @@ header{
      color: black;
     margin-top: 30px;   
 }
+*/
+/*
 
 .section-step a{
     text-align: center;
 }
-.section-step p{
-    font-weight: 300;
+*/
+.section-graduate p,
+.section-graduate-2 p{
+    font-weight: 500;
     font-size: 90%;
-    text-align: right;
+    line-height: 22px;
     margin-top: 30px;
 }
+/*
 .comp-btn{
     text-align: center;
 }
+*/
 
 .contact-form{
 
