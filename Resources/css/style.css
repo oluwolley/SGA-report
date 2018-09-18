@@ -19,7 +19,7 @@ html,body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     text-rendering: optimizeLegibility;
-    font-size: 20px;
+    font-size: 22px;
     overflow-x: hidden;
 }
 
@@ -38,21 +38,30 @@ html,body{
 
 .header{
     background-image: url("https://res.cloudinary.com/dhtqkszzc/image/upload/v1537011695/backgound-img_arlb5y.png");
-    background-size: cover;
+    /* background-size: cover; */
     background-position: center;
-    height:100vh;
+    width:105%;
+    height: 100vh;
+  
    
 }
 .head,.section-one-main{
      margin-left: 5%;
 }
 
+section {
+    height: 100vh;
+}
 
-
-.logo{
+.logo, .logo-black{
     height: 25px;
     margin-top: 30px;
     margin-left: 10px;
+    position: fixed;
+}
+
+.logo-black{
+    display: none;
 }
 
 .hero-logo{
@@ -74,7 +83,6 @@ html,body{
 
     border-top: 3px solid #00BFB1;
     width: 65%;
-    height:5px;
     margin:50px 0;
     
 }
@@ -115,11 +123,11 @@ section{
 
 /*----- Headings-------*/
 
-h2,h3{
+/* h2,h3{
    
     font-weight: 300;
     
-}
+} */
 
 
 
@@ -137,12 +145,12 @@ a:visited {
     padding-bottom: 1px;
     transition: border-bottom 0.2s, color 0.2s;
 }
-a:hover,
+/* a:hover,
 a:active{
     color: #555;
     padding-bottom: 1px;
     border-bottom: 1px solid transparent;
-}
+} */
 
 /*----- Buttons-------*/
  .btn:link,
@@ -232,11 +240,11 @@ input[type=button]:active{
     z-index: 9999;
     
 }
-.sticky.main-nav li a:link,
+/* .sticky.main-nav li a:link,
 .sticky.main-nav li a:visited{
     padding: 16px 0;
     color: #555;   
-}
+} */
 
 .sticky .logo{display: none}
 .sticky .logo-black{display:block}
@@ -245,7 +253,7 @@ input[type=button]:active{
 
 /* mobile nav*/
 
-.mobile-nav-icon{
+/* .mobile-nav-icon{
     float:right;
     cursor: pointer;
     margin-top: 30px;
@@ -255,7 +263,7 @@ input[type=button]:active{
 .mobile-nav-icon i{
     font-size: 200%;
     color:white;
-}
+} */
 
 
 
@@ -263,7 +271,8 @@ input[type=button]:active{
      background-image: url("https://res.cloudinary.com/dhtqkszzc/image/upload/v1537022595/Background_lnrlpo.svg");
      background-size: cover;
      background-position: center;
-    height: 100vh;
+     height: 100vh;
+   
    
 }
 .btn-ghost,
@@ -278,28 +287,21 @@ input[type=button]:active{
 
 
 .section-intro p{
-     font-size: 90%;
+     font-size: 100%;
      font-weight: 400;
     line-height: 24px;
 }
-.section-intro h4,
+.section-intro h3,
 .section-contact h4
 
 {
     font-size: 180%;
-    margin-left: 13%;
+    margin-left: 7%;
     margin-bottom: 0px;
 }
 
-.section-intro .first-p,
 
-.section-contact .first-p {
-    
-/*    text-align: center;*/
-    
-    
-}
-.section-contact h5{
+/* .section-contact h5{
     font-size: 180%;
     font-weight: 700;
     margin-bottom: 30px;
@@ -314,64 +316,54 @@ input[type=button]:active{
     width: 10%;
     border-top: 3px solid #e67e22;
   
-}
+} */
 
-/*
-.company 
-{
-    text-align: right;
-}
-*/
+
 .section-students{
     background-color: #ffffff;
     height: 100vh;
 }
 .section-students hr{
     border-top: 5px solid #0D2623;
-    width: 20%;
+    width: 10%;
     margin-bottom: 1%;
 }
 
-.section-students h3{
+.section-students h3, .section-sponsor h3{
     font-weight: 800;
     font-size: 150%;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+}
+.section-sponsor h3{
+    margin-left: 10%;
 }
 .section-students p{
     font-weight: 500;
-    font-size: 90%;
+    font-size: 100%;
     margin-bottom: 30px;
 }
-.app-screen{
- width: 60%;
-   margin-left:  30%;
-   margin-top: -80px;
-}
-.screen{
-    width: 60%;
-}
-.work-steps h5{
-    margin-bottom: 20px;
-    font-weight: 500;
-    font-size: 100%;
-}
-.work-steps  p{
-    margin-bottom: 10px;
-     font-size: 90%;
+
+.footer hr{
+    width: 10%;
+    border-top: 5px solid #00BFB1;
+    margin-bottom: 5%;
+  
 }
 
+
 .section-intro p,
-.section-intro h4,
+.section-intro h3,
 .section-intro h2
 {
    
-    color: #ffffff;
+    color: #0D2623;
    
 }
 .section-intro h2{
     font-weight: 600;
+    
      margin-bottom: 5px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 
@@ -382,9 +374,9 @@ input[type=button]:active{
 
 .section-intro hr{
     
-    border-top: 3px solid #ffffff;
+    border-top: 3px solid #0D2623;
     width: 5%;
-    margin-left: 13%;
+    margin-left: 7%;
     margin-bottom: 1%;
 }
 .section-graduate hr
@@ -408,7 +400,8 @@ input[type=button]:active{
      background-size: cover;
      background-position: center;
       color: #FFFFFF;
-     height: 100vh;
+      height: 100vh;
+    
     
 }
 
@@ -417,10 +410,13 @@ input[type=button]:active{
 }
 
 
+
 .section-graduate h3,
 .section-graduate-2 h3,
  .section-university h3,
-.section-university-2 h3{
+.section-university-2 h3,
+.section-sponsor h3,
+.footer h3{
     font-weight: 800;
     font-size: 200%;
     margin-top: 10px;
@@ -433,54 +429,51 @@ input[type=button]:active{
     height: 100vh;
 
 }
-.section-university h3,
-.section-university-2 h3{
+
+.section-university-2 h3
+{
     margin-left: 10%;
+}
+
+.section-university h3{
+    margin-left: 4%;
+}
+
+
+
+.section-sponsor p,
+.section-sponsor a
+ {
+    margin-left: 5%;
 }
 .section-graduate{
     background-image: url("https://res.cloudinary.com/dhtqkszzc/image/upload/v1537038084/Banner_geny_1_x5ktlh.png");
      background-size: cover;
      background-position: center;
-    height: 100vh;
-    
+     height: 100vh;
 }
 
 
 
-
-
-
-
-.graph-6{
-    float: left;
-}
-/*
-.section-step{
-     background-color: #ffffff;
-}
-.section-step .btn-ghost{
-     color: black;
-    margin-top: 30px;   
-}
-*/
-/*
-
-.section-step a{
-    text-align: center;
-}
-*/
 .section-graduate p,
-.section-graduate-2 p{
+.section-graduate-2 p,
+.section-sponsor p,
+.footer p{
     font-weight: 500;
-    font-size: 90%;
-    line-height: 22px;
+    font-size: 100%;
+    line-height: 26px;
     margin-top: 30px;
 }
-/*
-.comp-btn{
-    text-align: center;
+
+
+.section-sponsor .btn-ghost{
+    margin-top:40px ;
+    margin-bottom:60px;
+
 }
-*/
+
+
+/* Footer */
 
 .contact-form{
 
@@ -617,7 +610,7 @@ input:focus ~ .highlight {
   .tab-list li {
     display: inline-block;
     list-style-type: none;
-    background-color: #FDBC2D;
+    background-color:  #00BFB1;
     font-size: 16px;
     letter-spacing: 0.16em;
     text-transform: uppercase;
@@ -628,7 +621,7 @@ input:focus ~ .highlight {
 }
   
   .tab-list li a {
-    color: #f2f2f2;
+    color: #ffffff;
     display: block;
     text-decoration: none !important;
 }
@@ -636,12 +629,12 @@ input:focus ~ .highlight {
   
   /********** HOVER STATES **********/
   .tab-list li.active, .tab-list li.hover {
-    background-color: #FF9600;
+    background-color: #00968B;
 
 } 
   
   .tab-list li.active a, .tab-list li a:hover {
-    color: #666;
+    color: #ffffff;
 
 }
   
@@ -685,23 +678,24 @@ footer{
     float: left;
 }
 
-.social-nav, 
+.social-nav
 {
+    margin-top: 1px;
    list-style: none; 
     
 }
-.footer-nav li,
+/* .footer-nav li, */
 .social-nav li {
     display: inline-block;
     margin-right: 10px;
     
 }
-.footer-nav li:last-child,
-.social-nav l:last-child{
+/* .footer-nav li:last-child, */
+.social-nav:last-child{
     margin-right: 0;
 }
-.footer-nav li a:link,
-.footer-nav li a:visited,
+/* .footer-nav li a:link,
+.footer-nav li a:visited, */
 .social-nav li a:link,
 .social-nav li a:visited
 
